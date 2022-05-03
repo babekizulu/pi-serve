@@ -1,0 +1,17 @@
+//Mixins 
+@mixin centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@mixin wh100 {
+    width: 100%;
+    height: 100%;
+}

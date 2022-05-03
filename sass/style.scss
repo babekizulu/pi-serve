@@ -1,0 +1,62 @@
+@import 'utils';
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    @include wh100;
+    @include grid1;
+}
+
+.header-container {
+    @include centerFlex;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description-container {
+    @include centerFlex;
+    margin-top: 40px;
+    padding: 0 80px;
+}
+
+.description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.home-inventory-container {
+    @include grid1;
+}
+
+.home-inventory-header-container {
+    @include centerFlex;
+    margin: 40px;
+}
+
+.home-inventory-header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-inventory-list-container {
+    @include centerFlex;
+    margin: 20px;
+}
+
+.inventory-list {
+    list-style: circle;
+    li {
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+    }
+}
